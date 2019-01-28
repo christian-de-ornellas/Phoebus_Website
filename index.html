@@ -7,40 +7,107 @@
     <meta name="description" content="The Phoebus working with finance transfer between currency of all country.">
     <meta name="keywords" content="finance, transfer, money, currency">
     <meta name="author" content="Christian de Ornellas Possidonio">
+    
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/themecss/style.css">
     <title>Phoebus :: Finance Transfer</title>
 </head>
 <body>
     
-    <header id="main-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-phoe">
-                        <a href="/" class="navbar-brand">Phoebus</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                              </li>                              
-                            </ul>
-                        </div>                                
-                    </nav>
+    <header class="bg-phoe fixed-top" id="main-header">
+        <templete id="menu">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a href="/" class="navbar-brand">Phoebus</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                  <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Como funciona</a>
+                                  </li>
+                                  <li class="nav-item">
+                                        <a class="nav-link" href="#">Vantagens</a>
+                                  </li>
+                                  <li class="nav-item">
+                                        <a class="nav-link" href="#">Sobre nós</a>
+                                  </li>
+                                  <li class="nav-item">
+                                        <a class="nav-link" href="#">Contato</a>
+                                  </li>  
+                                  <li class="nav-item">
+                                        <a class="nav-link" href="#">Login</a>
+                                  </li>
+                                  <li class="nav-item">
+                                        <a class="nav-link" href="#">Criar conta</a>
+                                  </li>                                 
+                                </ul>
+                                <div id="google_translate_element" class="boxTradutor"></div>
+                                <ul class="translate">
+                                    <li><a href="javascript:trocarIdioma('es')"><img alt="espanhol" src="node_modules/img/flag-spanish.png"></a></li>
+                                    <li><a href="javascript:trocarIdioma('en')"><img alt="ingles" src="node_modules/img/flag-usa.png"></a></li>
+                                    <li><a href="javascript:trocarIdioma('fr')"><img alt="french" src="node_modules/img/flag-french.png"></a></li>
+                                </ul>
+                            </div>                                
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
+        </templete>
     </header>
+
+    <aside id="main-aside">
+        <template id="aside">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="jumbotron">
+                                <h1 class="display-4">Envie dinheiro agora</h1>
+                                <p class="lead">Transferir dinheiro de qualquer lugar do mundo e de todas as moedas.</p>
+                                <form action="" class="form-row">
+                                    <div class="form-group col-2">   
+                                        <label for="moeda_inicial">Moeda</label>                                 
+                                        <select name="" id="" class="form-control">                                    
+                                            <option value="">USD</option>
+                                            <option value="">EUR</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-4">   
+                                        <label for="moeda_inicial">Valor inicial</label>                                 
+                                        <input type="text" class="form-control" id="value_inicial" placeholder="Valor inicial">
+                                    </div>
+                                    <div class="form-group col-2">
+                                            <label for="moeda_inicial">Moeda</label>                                
+                                            <select name="" id="" class="form-control">                                    
+                                                <option value="">USD</option>
+                                                <option value="">EUR</option>
+                                            </select>
+                                        </div>
+                                    <div class="form-group col-4">
+                                        <label for="moeda_inicial">Valor final</label>    
+                                        <input type="text" class="form-control" id="value_final" placeholder="Valor final">
+                                    </div>
+                                </form>
+                                <a href="" class="btn btn-primary btn-lg">COMEÇAR AGORA</a>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </template>
+    </aside>
     
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/vue/dist/vue.min.js"></script>
     <script src="node_modules/pages/index.js"></script>
+    <script src="node_modules/translate/tradutor.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
