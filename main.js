@@ -1,6 +1,7 @@
 $(document).ready(function () {
     CofigPage()
     HomePage()
+    IndexPage()
     AboutUsPage()
     BenefitisPage()
     ItWorksPage()
@@ -16,6 +17,19 @@ function CofigPage() {
     $("#itWorks_page").hide()
     $("#commonQuestions_page").hide()
     $("#contactUs_page").hide()
+}
+
+
+function IndexPage() {
+    $("#index_link").click(function () {
+        $("#home_page").show()
+        $("#header_page").show()
+        $("#aboutUs_page").hide()
+        $("#benefits_page").hide()
+        $("#itWorks_page").hide()
+        $("#commonQuestions_page").hide()
+        $("#contactUs_page").hide()
+    })
 }
 
 function HomePage() {

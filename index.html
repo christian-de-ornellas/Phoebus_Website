@@ -25,7 +25,7 @@
             <div class="row ">
                 <div class="col-12 col-md-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a href="#" id="home_link" class="navbar-brand animated pulse"><img
+                        <a href="#" id="index_link" class="navbar-brand animated pulse"><img
                                 src="node_modules/img/logo.png" alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
                             aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,6 +33,9 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarContent">
                             <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" id="home_link">Início</a>
+                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#" id="aboutUs_link">Sobre nós</a>
                                 </li>
@@ -264,36 +267,103 @@
             </div>
         </section>
 
-        <!-- # FAQ # -->
-        <section id="commonQuestions_page">
+        <!-- # commonQuestionsPage() # -->
+        <section id="commonQuestions_page" class="commonQuestions interval">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>FAQ</h1>
+                        <h3>A maioria das dúvidas você encontra nos tópicos abaixo!</h3>
+                        <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                  <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Qual o prazo para o valor chegar ao destinatário?
+                                      </button>
+                                    </h2>
+                                  </div>
+                              
+                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Qual o valor máximo que posso transferir?
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Qual a opção na plataforma que eu vejo todas as minhas transferencias ?
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- # Contato # -->
-        <section id="contactUs_page">
+        <!-- # ContactUs() # -->
+        <section id="contactUs_page" class="interval contactUs">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>Contato</h1>
-                    </div>
+                        <h2>Qualquer dúvida você pode nos chamar no <b>Whatsapp</b> ou preencher os campos abaixo para nos enviar um <b>e-mail</b>.</h2>                      
+                    </div>                      
                 </div>
+                <form action="" class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" class="form-control" placeholder="Nome*">
+                        </div>
+                        <div class="form-group col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="E-mail*">
+                        </div>
+                        <div class="form-group col-md-12">
+                                <label for="title">Assunto</label>
+                                <input type="text" name="title" class="form-control" placeholder="Assunto*">
+                        </div>
+                        <div class="form-group col-md-12">
+                                <label for="message">Mensagem</label>
+                                <textarea name="message" class="form-control" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div class="form-group col-md-12">
+                              <button class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
             </div>
         </section>
 
     </main>
 
     <div class="whatsapp-message">
-        <a href="https://api.whatsapp.com/send?phone=5521980044029&text=Hi Phoebus!">Clique e <b>fale conosco</b>
+        <a target="__blank" href="https://api.whatsapp.com/send?phone=5521980044029&text=Hi Phoebus!">Clique e <b>fale conosco</b>
             agora!</a>
     </div>
     <div class="whatsapp-float">
-        <a href="https://api.whatsapp.com/send?phone=5521980044029&text=Hi Phoebus!"><i
+        <a target="__blank" href="https://api.whatsapp.com/send?phone=5521980044029&text=Hi Phoebus!"><i
                 class="fab fa-whatsapp fa-3x"></i></a>
     </div>
 
@@ -310,10 +380,10 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="main.js"></script>
     <script src="node_modules/pages/aside.js"></script>
-    <script src="node_modules/translate/tradutor.js"></script>
     <script src="node_modules/pages/cotacao.js"></script>
-    <script src="node_modules/pages/whatsapp-float.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="node_modules/translate/tradutor.js"></script>
+    <script src="node_modules/pages/whatsapp-float.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/axios/dist/axios.min.js"></script>
 
