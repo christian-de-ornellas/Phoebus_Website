@@ -7,6 +7,8 @@ $(document).ready(function () {
     ItWorksPage()
     CommonQuestionsPage()
     ContatoUsPage()
+    CreateAccountPage()
+    TransferPage()
 })
 
 function CofigPage() {
@@ -17,6 +19,7 @@ function CofigPage() {
     $("#itWorks_page").hide()
     $("#commonQuestions_page").hide()
     $("#contactUs_page").hide()
+    $("#createAccount_page").hide()
 }
 
 
@@ -29,6 +32,7 @@ function IndexPage() {
         $("#itWorks_page").hide()
         $("#commonQuestions_page").hide()
         $("#contactUs_page").hide()
+        $("#createAccount_page").hide()
     })
 }
 
@@ -41,6 +45,7 @@ function HomePage() {
         $("#itWorks_page").hide()
         $("#commonQuestions_page").hide()
         $("#contactUs_page").hide()
+        $("#createAccount_page").hide()
     })
 }
 
@@ -53,6 +58,7 @@ function AboutUsPage() {
         $("#itWorks_page").hide()
         $("#commonQuestions_page").hide()
         $("#contactUs_page").hide()
+        $("#createAccount_page").hide()
     })
 }
 
@@ -65,6 +71,7 @@ function BenefitisPage() {
         $("#itWorks_page").hide()
         $("#commonQuestions_page").hide()
         $("#contactUs_page").hide()
+        $("#createAccount_page").hide()
     })
 }
 
@@ -77,6 +84,7 @@ function ItWorksPage() {
         $("#itWorks_page").show()
         $("#commonQuestions_page").hide()
         $("#contactUs_page").hide()
+        $("#createAccount_page").hide()
     })
 }
 
@@ -89,6 +97,7 @@ function CommonQuestionsPage() {
         $("#itWorks_page").hide()
         $("#commonQuestions_page").show()
         $("#contactUs_page").hide()
+        $("#createAccount_page").hide()
     })
 }
 
@@ -101,5 +110,33 @@ function ContatoUsPage() {
         $("#itWorks_page").hide()
         $("#commonQuestions_page").hide()
         $("#contactUs_page").show()
+        $("#createAccount_page").hide()
     })
 }
+
+function CreateAccountPage() {
+    $("#createAccount_link").click(function () {
+        $("#home_page").hide()
+        $("#header_page").hide()
+        $("#aboutUs_page").hide()
+        $("#benefits_page").hide()
+        $("#itWorks_page").hide()
+        $("#commonQuestions_page").hide()
+        $("#contactUs_page").hide()
+        $("#createAccount_page").show()
+    })
+}
+function TransferPage() {
+    $("#transfer_link").click(function () {
+        $("#home_page").hide()
+        $("#header_page").hide()
+        $("#aboutUs_page").hide()
+        $("#benefits_page").hide()
+        $("#itWorks_page").hide()
+        $("#commonQuestions_page").hide()
+        $("#contactUs_page").hide()
+        $("#createAccount_page").show()
+    })
+}
+
+

@@ -52,10 +52,11 @@
                                     <a class="nav-link" href="#" id="contactUs_link">Contato</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link btn-active" href="#">Login</a>
+                                    <a class="nav-link btn-active" target="_blank"
+                                        href="http://58a07b26.ngrok.io/login">Login</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link btn-active" href="#">Criar conta</a>
+                                    <a class="nav-link btn-active" href="#" id="createAccount_link">Criar conta</a>
                                 </li>
                             </ul>
                             <div id="google_translate_element" class="boxTradutor"></div>
@@ -160,76 +161,77 @@
     <!-- # HomePage # -->
     <section id="home_page">
 
-        <div class="container">
-            <div class="row interval page-title">
+        <article class="bg-facility">
+            <div class="container">
+                <div class="row interval align-items-center">
 
-                <div class="col-md-12">
-                    <h2>Aproveite as vantagens a seu favor!</h2>
+                    <div class="col-md-8">
+                        <figure><img class="img-fluid" src="node_modules/img/facility.gif" alt="Facilidade Digital">
+                        </figure>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h2>Facilidade</h2>
+                        <p class="lead">Você tem toda a facilidade para transferir os valores desejados, pois em poucos
+                            cliques
+                            e alguns minutos as operações são executadas.</p>
+                    </div>
+
                 </div>
             </div>
+        </article>
 
-            <div class="row interval" id="easy">
 
-                <div class="col-md-8 box-img">
-                    <figure><img class="img-fluid" width="100%" src="node_modules/img/facilidade.jpg"
-                            alt="Facilidade Digital"></figure>
-                </div>
 
-                <div class="col-md-4">
-                    <h2>Facilidade</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas recusandae
-                        dolores sed a necessitatibus quaerat quidem, odio unde, ipsam voluptate animi repellat
-                        cumque sapiente tenetur at esse laboriosam. Quibusdam, magnam?</p>
-                </div>
+        <article class="bg-liberty">
+            <div class="container">
+                <div class="row interval align-items-center" id="liberty">
+                    <div class="col-md-4">
+                        <h2>Liberdade</h2>
+                        <p class="lead">Você tem a liberdade de transferir valores pequenos ou grandes, de qualquer
+                            lugar e a
+                            qualquer hora!</p>
+                    </div>
 
-            </div>
+                    <div class="col-md-8">
+                        <figure><img class="img-fluid" src="node_modules/img/liberty.gif" alt="Liberdade Digital">
+                        </figure>
+                    </div>
 
-            <div class="row interval" id="liberty">
-                <div class="col-md-4">
-                    <h2>Liberdade</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas recusandae
-                        dolores sed a necessitatibus quaerat quidem, odio unde, ipsam voluptate animi repellat
-                        cumque sapiente tenetur at esse laboriosam. Quibusdam, magnam?</p>
-                </div>
-
-                <div class="col-md-8 box-img">
-                    <figure><img class="img-fluid" width="100%" src="node_modules/img/liberdade.jpg"
-                            alt="Liberdade Digital"></figure>
-                </div>
-
-            </div>
-
-            <div class="row interval" id="easy">
-
-                <div class="col-md-8 box-img">
-                    <figure><img class="img-fluid" width="100%" src="node_modules/img/seguranca.jpg"
-                            alt="Segurança Digital"></figure>
-                </div>
-
-                <div class="col-md-4">
-                    <h2>Segurança</h2>000
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas recusandae
-                        dolores sed a necessitatibus quaerat quidem, odio unde, ipsam voluptate animi repellat
-                        cumque sapiente tenetur at esse laboriosam. Quibusdam, magnam?</p>
-                </div>
-
-            </div>
-
-            <div class="row interval page-title">
-
-                <div class="col-md-12">
-                    <h2>Em poucos cliques você transfere a quantia que deseja!</h2>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>ss</h3>
                 </div>
             </div>
+        </article>
 
-        </div>
+        <article class="bg-secury">
+            <div class="container">
+                <div class="row interval align-items-center" id="easy">
+
+                    <div class="col-md-8">
+                        <figure><img class="img-fluid" src="node_modules/img/secury.gif" alt="Segurança Digital">
+                        </figure>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h2>Segurança</h2>
+                        <p class="lead">Dinheiro é coisa sério e por isso nós tomamos todas as medidas para proteger o
+                            sigilo de
+                            seus dados e valores.</p>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+        <article class="bg-now interval">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#" class="btn btn-primary btn-lg" id="transfer_link">SOLICITAR TRANSFERÊNCIA</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
     </section>
 
     <main id="main_content">
@@ -274,50 +276,79 @@
                     <div class="col-md-12">
                         <h3>A maioria das dúvidas você encontra nos tópicos abaixo!</h3>
                         <div class="accordion" id="accordionExample">
-                                <div class="card">
-                                  <div class="card-header" id="headingOne">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
                                     <h2 class="mb-0">
-                                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Qual o prazo para o valor chegar ao destinatário?
-                                      </button>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Qual o prazo para o valor chegar ao destinatário?
+                                        </button>
                                     </h2>
-                                  </div>
-                              
-                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                  </div>
                                 </div>
-                                <div class="card">
-                                  <div class="card-header" id="headingTwo">
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
                                     <h2 class="mb-0">
-                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Qual o valor máximo que posso transferir?
-                                      </button>
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Qual o valor máximo que posso transferir?
+                                        </button>
                                     </h2>
-                                  </div>
-                                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                  </div>
                                 </div>
-                                <div class="card">
-                                  <div class="card-header" id="headingThree">
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
                                     <h2 class="mb-0">
-                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Qual a opção na plataforma que eu vejo todas as minhas transferencias ?
-                                      </button>
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Qual a opção na plataforma que eu vejo todas as minhas transferencias ?
+                                        </button>
                                     </h2>
-                                  </div>
-                                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -328,38 +359,78 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>Qualquer dúvida você pode nos chamar no <b>Whatsapp</b> ou preencher os campos abaixo para nos enviar um <b>e-mail</b>.</h2>                      
-                    </div>                      
+                        <h2>Qualquer dúvida você pode nos chamar no <b>Whatsapp</b> ou preencher os campos abaixo para
+                            nos enviar um <b>e-mail</b>.</h2>
+                    </div>
                 </div>
-                <form action="" class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="name">Nome</label>
-                            <input type="text" name="name" class="form-control" placeholder="Nome*">
-                        </div>
-                        <div class="form-group col-md-6">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" class="form-control" placeholder="E-mail*">
-                        </div>
-                        <div class="form-group col-md-12">
-                                <label for="title">Assunto</label>
-                                <input type="text" name="title" class="form-control" placeholder="Assunto*">
-                        </div>
-                        <div class="form-group col-md-12">
-                                <label for="message">Mensagem</label>
-                                <textarea name="message" class="form-control" cols="30" rows="10"></textarea>
-                        </div>
+                <form class="form-row form-cotacao">
+                    <div class="form-group col-md-6">
+                        <label for="">Nome completo</label>
+                        <input type="text" class="form-control">
+                    </div>
 
-                        <div class="form-group col-md-12">
-                              <button class="btn btn-primary">Enviar</button>
-                        </div>
-                    </form>
+                    <div class="form-group col-md-6">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label for="">Assunto</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label for="">Mensagem</label>
+                        <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- # CreateAccount() # -->
+        <section id="createAccount_page" class="interval createAccount">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Preencha os campos abaixo para solicitar a transferência!</h2>
+                    </div>
+                </div>
+                <form class="form-row form-cotacao" onchange="SimulationCotation()">
+                    <div class="form-group col-12 col-md-2">
+                        <label for="moeda_inicial">Moeda</label>
+                        <select name="" id="coin" class="form-control">
+                            <option value="1.00">CHF</option>
+                            <option value="2.09">EUR</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-12 col-md-4">
+                        <label for="moeda_inicial">Você envia</label>
+                        <input type="text" autofocus class="form-control" id="coinStart" placeholder="Ex: 20.00">
+                    </div>
+                    <div class="form-group col-12 col-md-2">
+                        <label for="moeda_inicial">Moeda</label>
+                        <select name="" id="coinn" class="form-control">
+                            <option value="">USD</option>
+                            <option value="">EUR</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-12 col-md-4">
+                        <label for="moeda_inicial">O destinatário recebe</label>
+                        <input type="text" class="form-control" readonly="true" id="coinConvert">
+                    </div>
+                </form>
             </div>
         </section>
 
     </main>
 
     <div class="whatsapp-message">
-        <a target="__blank" href="https://api.whatsapp.com/send?phone=5521980044029&text=Hi Phoebus!">Clique e <b>fale conosco</b>
+        <a target="__blank" href="https://api.whatsapp.com/send?phone=5521980044029&text=Hi Phoebus!">Clique e <b>fale
+                conosco</b>
             agora!</a>
     </div>
     <div class="whatsapp-float">
