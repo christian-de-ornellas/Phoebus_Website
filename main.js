@@ -4,11 +4,11 @@ $(document).ready(function () {
     IndexPage()
     AboutUsPage()
     BenefitisPage()
-    ItWorksPage()
     CommonQuestionsPage()
     ContatoUsPage()
     CreateAccountPage()
     TransferPage()
+    CreateAccountPageTwo()
 })
 
 function CofigPage() {
@@ -75,18 +75,6 @@ function BenefitisPage() {
     })
 }
 
-function ItWorksPage() {
-    $("#itWorks_link").click(function () {
-        $("#home_page").hide()
-        $("#header_page").hide()
-        $("#aboutUs_page").hide()
-        $("#benefits_page").hide()
-        $("#itWorks_page").show()
-        $("#commonQuestions_page").hide()
-        $("#contactUs_page").hide()
-        $("#createAccount_page").hide()
-    })
-}
 
 function CommonQuestionsPage() {
     $("#commonQuestions_link").click(function () {
@@ -126,6 +114,20 @@ function CreateAccountPage() {
         $("#createAccount_page").show()
     })
 }
+
+function CreateAccountPageTwo() {
+    $("#createAccount_linkTwo").click(function () {
+        $("#home_page").hide()
+        $("#header_page").hide()
+        $("#aboutUs_page").hide()
+        $("#benefits_page").hide()
+        $("#itWorks_page").hide()
+        $("#commonQuestions_page").hide()
+        $("#contactUs_page").hide()
+        $("#createAccount_page").show()
+    })
+}
+
 function TransferPage() {
     $("#transfer_link").click(function () {
         $("#home_page").hide()

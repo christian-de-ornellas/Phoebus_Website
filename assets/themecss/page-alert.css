@@ -1,0 +1,17 @@
+body{
+    
+}
+
+.page-success{
+    margin-top: 6rem; 
+    color: rgb(37, 175, 117);   
+}
+
+.bg-success{
+    background: rgb(129, 255, 188);
+}
+
+.page-error{
+    margin-top: 6rem; 
+    color: rgb(218, 15, 1);   
+}

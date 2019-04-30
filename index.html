@@ -8,12 +8,12 @@
     <meta name="description" content="The Phoebus working with finance transfer between currency of all country.">
     <meta name="keywords" content="finance, transfer, money, currency">
     <meta name="author" content="Christian de Ornellas Possidonio">
-    <link rel="icon" href="node_modules/img/icon.png">
+    <link rel="icon" href="assets/img/icon.png">
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/themecss/style.css">
-    <link rel="stylesheet" href="node_modules/animation/animate.min.css">
-    <link rel="stylesheet" href="node_modules/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/themecss/style.css">
+    <link rel="stylesheet" href="assets/animation/animate.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
     <title>Phoebus :: Finance Transfer</title>
 </head>
@@ -25,8 +25,8 @@
             <div class="row ">
                 <div class="col-12 col-md-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a href="#" id="index_link" class="navbar-brand animated pulse"><img
-                                src="node_modules/img/logo.png" alt=""></a>
+                        <a href="#" id="index_link" class="navbar-brand animated pulse"><img src="assets/img/logo.png"
+                                alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
                             aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -42,18 +42,16 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#" id="benefits_link">Vantagens</a>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#" id="itWorks_link">Como funciona</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" id="commonQuestions_link">Perguntas Frequentes</a>
+                                    <a class="nav-link" href="#" id="commonQuestions_link">Dúvidas</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#" id="contactUs_link">Contato</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link btn-active" target="_blank"
-                                        href="http://58a07b26.ngrok.io/login">Login</a>
+                                        href="http://phoebusfinance.ch/login">Login</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link btn-active" href="#" id="createAccount_link">Criar conta</a>
@@ -62,11 +60,11 @@
                             <div id="google_translate_element" class="boxTradutor"></div>
                             <ul class="translate">
                                 <li><a href="javascript:trocarIdioma('es')"><img alt="espanhol"
-                                            src="node_modules/img/flag-spanish.png"></a></li>
+                                            src="assets/img/flag-spanish.png"></a></li>
                                 <li><a href="javascript:trocarIdioma('en')"><img alt="ingles"
-                                            src="node_modules/img/flag-usa.png"></a></li>
+                                            src="assets/img/flag-usa.png"></a></li>
                                 <li><a href="javascript:trocarIdioma('fr')"><img alt="french"
-                                            src="node_modules/img/flag-french.png"></a></li>
+                                            src="assets/img/flag-french.png"></a></li>
                             </ul>
                         </div>
                     </nav>
@@ -111,12 +109,12 @@
                                 <input type="text" class="form-control" readonly="true" id="coinConvert">
                             </div>
                         </form>
-                        <a href="" class="btn btn-primary btn-lg">COMEÇAR AGORA</a>
+                        <a href="#" class="btn btn-primary btn-lg" id="createAccount_linkTwo">COMEÇAR AGORA</a>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-5">
-                    <figure id="animation-initial"><img src="node_modules/img/world-send.png" alt="Secury"></figure>
+                    <figure><img src="assets/img/header-phoe.gif" alt="World Phoebus"></figure>
                 </div>
 
             </div>
@@ -166,7 +164,7 @@
                 <div class="row interval align-items-center">
 
                     <div class="col-md-8">
-                        <figure><img class="img-fluid" src="node_modules/img/facility.gif" alt="Facilidade Digital">
+                        <figure><img class="img-fluid" src="assets/img/facility.gif" alt="Facilidade Digital">
                         </figure>
                     </div>
 
@@ -194,7 +192,7 @@
                     </div>
 
                     <div class="col-md-8">
-                        <figure><img class="img-fluid" src="node_modules/img/liberty.gif" alt="Liberdade Digital">
+                        <figure><img class="img-fluid" src="assets/img/liberty.gif" alt="Liberdade Digital">
                         </figure>
                     </div>
 
@@ -207,7 +205,7 @@
                 <div class="row interval align-items-center" id="easy">
 
                     <div class="col-md-8">
-                        <figure><img class="img-fluid" src="node_modules/img/secury.gif" alt="Segurança Digital">
+                        <figure><img class="img-fluid" src="assets/img/secury.gif" alt="Segurança Digital">
                         </figure>
                     </div>
 
@@ -238,32 +236,92 @@
 
         <!-- # About Us # -->
         <section id="aboutUs_page">
+            <div class="about-image"></div>
             <div class="container">
-                <div class="row">
+                <div class="row  interval">
                     <div class="col-md-12">
                         <h1>Sobre</h1>
+                    </div>
+                    <div class="col-12">
+                        <p class="lead">
+                            Phoebus Finance é uma empresa especializada em transferência internacional. Nossa equipe de
+                            profissionais são reconhecido localmente por sua capacidade, seu sigilo, e sua ética
+                            profissional. Recebem treinamento anual sobre legislação, e sobre o mercado de money
+                            transfer e estão familiarizados pra atender nossos clientes em diversas linguas (Francês,
+                            Inglês, Portugues, Espanhol).
+
+                        </p>
+                        <p class="lead">
+
+                            Nossos colaboradores estão 100% adequados as normas exigidas
+                            pelo nosso seguimento e aptos a exercer suas funções e estão sempre a disposição para
+                            encantar nossos clientes com o melhor que PHOEBUS pode lhe proporcionar em atendimento e
+                            relacionamanto enterpessoal.
+
+                        </p>
+                        <p class="lead">
+
+                            Nossas lojas fisicas estão atualmente em Genève e Nyon
+                            estrategicamente para melhor servi-los. A Phoebus Finance SA, tem como foco e objetivo
+                            ajudar nossos clientes a prosperar financeiramente para tanto, temos projetos e atuamos
+                            também
+                            na gestão financeira e fortuna.
+
+                        </p>
+                        <p class="lead">
+                            Trabalhamos de forma a adequar o melhor que a economia
+                            global pode proporcionar em ganhos a nossos clientes. Temos como lema a transparência em
+                            nossas operações e sigilo fiscal de nossos clientes. Vem se encantar com o JEITO PHOEBUS
+                            você também !!!
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- # Benefits # -->
-        <section id="benefits_page">
+        <section class="bg-clean benefits" id="benefits_page">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h1>Vantagens</h1>
+                    <div class="col-6 interval">
+                        <h1>O nosso site analisa em tempo recorde as<b> melhores taxas</b> e a quantia chega com
+                            <b>segurança</b> ao destinatário </h1>
+                    </div>
+                    <div class="col-6">
+                        <figure><img src="node_modules/img/liberty.gif" alt=""></figure>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- # Como Funciona # -->
-        <section id="itWorks_page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>Como funciona</h1>
+                <div class="row" id="cards">
+                    <div class="col-md-4 text-center">
+                        <div class="card card-phoe item-1">
+                            <div class="card-body">
+                                <i class="far fa-grin-stars fa-3x"></i>
+                                <h3>Facilidade</h3>
+                                <p>Com poucos cliques você consegue realizar uma tranferência, e caso precise estamos a
+                                    disposição para te ajudar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card card-phoe item-2">
+                            <div class="card-body">
+                                <i class="fas fa-globe fa-3x"></i>
+                                <h3>Conforto</h3>
+                                <p>Você tem total liberdade para enviar de qualquer lugar no mundo em diferentes moedas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card card-phoe item-3">
+                            <div class="card-body">
+                                <i class="fab fa-expeditedssl fa-3x"></i>
+                                <h3>Agilidade</h3>
+                                <p>Envio normal em até 24h, envio Expresso em até 2h ou envio expresso no mesmo dia
+                                    câmbio com taxas de mercado</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -281,7 +339,7 @@
                                     <h2 class="mb-0">
                                         <button class="btn btn-link" type="button" data-toggle="collapse"
                                             data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Qual o prazo para o valor chegar ao destinatário?
+                                            Quais documentos necessários para fazer o envio de dinheiro?
                                         </button>
                                     </h2>
                                 </div>
@@ -289,14 +347,7 @@
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                        Site em construção!
                                     </div>
                                 </div>
                             </div>
@@ -306,21 +357,14 @@
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                             data-target="#collapseTwo" aria-expanded="false"
                                             aria-controls="collapseTwo">
-                                            Qual o valor máximo que posso transferir?
+                                            Em quanto tempo o dinheiro chega na conta do destinatário?
                                         </button>
                                     </h2>
                                 </div>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                        Site em construção!
                                     </div>
                                 </div>
                             </div>
@@ -330,21 +374,31 @@
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                             data-target="#collapseThree" aria-expanded="false"
                                             aria-controls="collapseThree">
-                                            Qual a opção na plataforma que eu vejo todas as minhas transferencias ?
+                                            Até que valor posso enviar?
                                         </button>
                                     </h2>
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                        Site em construção!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            Quais são os tipos de pagamento, e as moedas aceitas como pagamento?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Site em construção!
                                     </div>
                                 </div>
                             </div>
@@ -358,35 +412,54 @@
         <section id="contactUs_page" class="interval contactUs">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-8">
                         <h2>Qualquer dúvida você pode nos chamar no <b>Whatsapp</b> ou preencher os campos abaixo para
                             nos enviar um <b>e-mail</b>.</h2>
+
+                        <div class="interval">
+                            <form class="form-row form-cotacao">
+                                <div class="form-group col-md-6">
+                                    <label for="">Nome completo</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="">Email</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group col-md-12">
+                                    <label for="">Assunto</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group col-md-12">
+                                    <label for="">Mensagem</label>
+                                    <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <ul class="contact">
+                            <li class="contact-header">Contatos</li>
+                            <li>Tel Genève: +41 22 900 1771</li>
+                            <li>Whatsapp: +41 79 880 4748</li>
+                            <li>Tel: +41 21 888 7788</li>
+                            <li>Whatsapp: +41 76 400 5334 </li>
+                            <li>Email: info@phoebusfinance.ch</li>
+                            <li>Facebook: @phoebustransfer</li>
+                            <li>Instagram: @phoebustransfer</li>
+                            <li>Endereço GE: Rue de Chantepoulet, 12 - 1201 Genève</li>
+                            <li>Endreço VD: Rue Saint-Jean, 30 - 1260 Nyon</li>
+                        </ul>
                     </div>
                 </div>
-                <form class="form-row form-cotacao">
-                    <div class="form-group col-md-6">
-                        <label for="">Nome completo</label>
-                        <input type="text" class="form-control">
-                    </div>
 
-                    <div class="form-group col-md-6">
-                        <label for="">Email</label>
-                        <input type="text" class="form-control">
-                    </div>
-
-                    <div class="form-group col-md-12">
-                        <label for="">Assunto</label>
-                        <input type="text" class="form-control">
-                    </div>
-
-                    <div class="form-group col-md-12">
-                        <label for="">Mensagem</label>
-                        <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn-primary">Enviar</button>
-                    </div>
-                </form>
             </div>
         </section>
 
@@ -395,34 +468,146 @@
         <section id="createAccount_page" class="interval createAccount">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h2>Preencha os campos abaixo para solicitar a transferência!</h2>
-                    </div>
+
+                    <form class="form-cotacao" method="POST" action="server-side/send.php">
+
+                        <div class="row" id="dataPersonal">
+
+                            <div class="col-12">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item active" aria-current="page">Dados Pessoais</li>
+                                    </ol>
+                                </nav>
+                            </div>
+
+                            <div class="col-12" id="resp_msg"></div>
+
+                            <div class="form-group col-4">
+                                <label for="name_lead">Nome completo</label>
+                                <input type="text" name="name" id="name" required title="Name" class="form-control">
+                            </div>
+
+                            <div class="form-group col-3">
+                                <label for="age">Data de nascimento</label>
+                                <input type="date" name="age" id="age" class="form-control">
+                            </div>
+
+                            <div class="form-group col-5">
+                                <label for="address">Endereço</label>
+                                <input type="text" name="address" id="address" class="form-control">
+                            </div>
+
+                            <div class="form-group col-4">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="form-control">
+                            </div>
+
+                            <div class="form-group col-4">
+                                <label for="cellphone">Phone / Whatsapp</label>
+                                <input type="phone" name="cellphone" id="cellphone" class="form-control">
+                            </div>
+
+                            <div class="form-group col-4">
+                                <label for="passport">Número do Passaporte</label>
+                                <input type="text" name="passport" id="passport" class="form-control">
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <button type="button" id="next-step" class="btn btn-primary">Próximo</button>
+                            </div>
+
+                        </div> <!-- dataPersonal -->
+
+                        <div class="row" id="dataFinance">
+                            <div class="col-12 padding-zero">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item active" aria-current="page">Dados do Favorecido
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+
+                            <div class="form-group col-12">
+
+                                <label for="type-personal-pf">
+                                    <input type="radio" name="type_personal" id="type-personal-pf" value="cpf">
+                                    Pessoa
+                                    Física
+                                </label>
+
+                                <label for="type-personal-pj">
+                                    <input type="radio" name="type_personal" id="type-personal-pj" value="cnpj">
+                                    Pessoa
+                                    Jurídica
+                                </label>
+
+                            </div>
+
+                            <div class="form-group col-4">
+                                <label for="name_pf">Titular da conta</label>
+                                <input type="text" name="name_account" id="name_account" class="form-control" required>
+                            </div>
+
+                            <div class="form-group col-3">
+                                <label for="document" id="document"></label>
+                                <input type="text" name="document" class="form-control" required>
+                            </div>
+
+                            <div class="form-group col-3">
+                                <label for="value_transfer">Valor</label>
+                                <input type="text" name="value_transfer" class="form-control" required>
+                            </div>
+
+                            <div class="form-group col-2">
+                                <label for="coin">Moeda</label>
+                                <select name="coin" id="coin" class="form-control" required>
+                                    <option value="USD">USD</option>
+                                    <option value="CHF">CHF</option>
+                                    <option value="EUR">EUR</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+
+                                <label for="poup">
+                                    <input type="radio" name="type_bank" id="poup_pf" value="poupanca">
+                                    Conta Poupança
+                                </label>
+
+                                <label for="corrent">
+                                    <input type="radio" name="type_bank" id="corrent_pf" value="corrente">
+                                    Conta Corrente
+                                </label>
+
+                            </div>
+
+                            <div class="form-group col-4">
+                                <label for="bank_pf">Banco</label>
+                                <input type="text" name="name_bank" id="bank_pf" class="form-control" required>
+                            </div>
+
+                            <div class="form-group col-4">
+                                <label for="agency_pf">Agência</label>
+                                <input type="text" name="agency_bank" id="agency_pf" class="form-control" required>
+                            </div>
+
+                            <div class="form-group col-4">
+                                <label for="account_pf">Conta</label>
+                                <input type="text" name="number_account" id="account_pf" class="form-control" required>
+                            </div>
+
+                            <div class="form-group col-12">
+                                <button type="button" id="back-step" class="btn btn-primary">Voltar</button>
+                                <button type="submit" id="Send" class="btn btn-primary">Cadastrar</button>
+                            </div>
+
+                        </div><!-- dataFinance-->
+
+
+                    </form>
                 </div>
-                <form class="form-row form-cotacao" onchange="SimulationCotation()">
-                    <div class="form-group col-12 col-md-2">
-                        <label for="moeda_inicial">Moeda</label>
-                        <select name="" id="coin" class="form-control">
-                            <option value="1.00">CHF</option>
-                            <option value="2.09">EUR</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-12 col-md-4">
-                        <label for="moeda_inicial">Você envia</label>
-                        <input type="text" autofocus class="form-control" id="coinStart" placeholder="Ex: 20.00">
-                    </div>
-                    <div class="form-group col-12 col-md-2">
-                        <label for="moeda_inicial">Moeda</label>
-                        <select name="" id="coinn" class="form-control">
-                            <option value="">USD</option>
-                            <option value="">EUR</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-12 col-md-4">
-                        <label for="moeda_inicial">O destinatário recebe</label>
-                        <input type="text" class="form-control" readonly="true" id="coinConvert">
-                    </div>
-                </form>
             </div>
         </section>
 
@@ -434,29 +619,30 @@
             agora!</a>
     </div>
     <div class="whatsapp-float">
-        <a target="__blank" href="https://api.whatsapp.com/send?phone=5521980044029&text=Hi Phoebus!"><i
+        <a target="__blank" href="https://api.whatsapp.com/send?phone=41798804748&text=Hi Phoebus!"><i
                 class="fab fa-whatsapp fa-3x"></i></a>
     </div>
 
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" title="Desenvolvido por Christian Possidonio">
                     Todos os direitos reservados &copy;Phoebus
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="assets/jquery/dist/jquery.min.js"></script>
     <script src="main.js"></script>
-    <script src="node_modules/pages/aside.js"></script>
-    <script src="node_modules/pages/cotacao.js"></script>
-    <script src="node_modules/translate/tradutor.js"></script>
+    <script src="assets/pages/aside.js"></script>
+    <script src="assets/pages/cotacao.js"></script>
+    <script src="assets/translate/tradutor.js"></script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script src="node_modules/pages/whatsapp-float.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="assets/pages/whatsapp-float.js"></script>
+    <script src="assets/pages/send.js"></script>
+    <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/axios/dist/axios.min.js"></script>
 
 </body>
 
