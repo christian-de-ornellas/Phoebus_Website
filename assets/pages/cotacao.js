@@ -29,6 +29,8 @@ function SimulationCotation() {
 
 function getCoin() {
 
+	//https://economia.awesomeapi.com.br/jsonp/EUR-BRL
+
 	const phoebus_api = "http://58a07b26.ngrok.io/api/coins"
 	axios.get(`${phoebus_api}`)
 		.then(function (response) {
